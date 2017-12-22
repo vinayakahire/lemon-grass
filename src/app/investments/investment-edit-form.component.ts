@@ -1,7 +1,7 @@
-import { Component, OnInit } from "@angular/core";
-import { InvestmentService } from "./investment.service";
-import { NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
-import { FormBuilder, Validators } from "@angular/forms";
+import { Component, OnInit } from '@angular/core';
+import { InvestmentService } from './investment.service';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({selector: 'app-investment-edit-form', templateUrl: 'investment-edit-form.component.html'})
 export class InvestmentEditFormComponent implements OnInit {

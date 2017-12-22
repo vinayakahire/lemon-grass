@@ -1,10 +1,10 @@
-import { Component, Input } from "@angular/core";
-import { NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { InvestmentService } from "./investment.service";
+import { Component, Input } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { InvestmentService } from './investment.service';
 
 @Component({
-    selector: 'ngbd-modal-content',
+    selector: 'app-modal-content',
     templateUrl: './investment-form.component.html'
 })
 export class InvestmentFormComponent {
