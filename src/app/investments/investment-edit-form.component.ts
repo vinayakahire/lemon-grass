@@ -20,8 +20,8 @@ export class InvestmentEditFormComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.investmentService.fetch(this.id).subscribe(data=>{
-            this.investmentForm.patchValue(data.json())
+        this.investmentService.fetch(this.id).subscribe(data => {
+            this.investmentForm.patchValue(data.json());
         });
     }
 }

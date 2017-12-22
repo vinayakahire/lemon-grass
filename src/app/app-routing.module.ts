@@ -1,15 +1,15 @@
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
-import { InvestmentListComponent } from "./investments/investment-list.component";
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { InvestmentListComponent } from './investments/investment-list.component';
 
 
 const routes: Routes = [
 
     {
-        path: "", pathMatch: "full", redirectTo: "investments"
+        path: '', pathMatch: 'full', redirectTo: 'investments'
     },
     {
-        path: "investments", component: InvestmentListComponent
+        path: 'investments', component: InvestmentListComponent
     }
 ];
 

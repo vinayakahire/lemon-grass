@@ -1,8 +1,8 @@
-import { Component, OnInit } from "@angular/core";
-import { InvestmentService } from "./investment.service";
-import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
-import { InvestmentEditFormComponent } from "./investment-edit-form.component";
-import { InvestmentFormComponent } from "./investment-form.component";
+import { Component, OnInit } from '@angular/core';
+import { InvestmentService } from './investment.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { InvestmentEditFormComponent } from './investment-edit-form.component';
+import { InvestmentFormComponent } from './investment-form.component';
 
 @Component({ selector: 'app-investment-list', templateUrl: 'investment-list.component.html' })
 export class InvestmentListComponent implements OnInit {
