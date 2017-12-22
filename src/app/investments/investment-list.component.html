@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <h2>Investments</h2>
+    <div><button class="btn btn-success" (click)="add()">Add</button></div>
+    <table class="table table-bordered">
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Investment Date</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let investment of investments">
+            <td>{{investment.name}}</td>
+            <td>{{investment.type}}</td>
+            <td>{{investment.amount}}</td>
+            <td>{{investment.investmentDate}}</td>
+            <td>
+                <button class="btn btn-danger" (click)="delete(investment.id)">Delete</button>
+                <button class="btn btn-warning" (click)="edit(investment.id)">Edit</button>
+            </td>
+        </tr>
+    </table>
+</div>

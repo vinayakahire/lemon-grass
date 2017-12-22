@@ -1,0 +1,42 @@
+{
+  "investments": [
+    {
+      "id": 1,
+      "name": "ABC",
+      "type": "Test",
+      "amount": 100,
+      "investmentDate": "2017-12-12"
+    },
+    {
+      "name": "a",
+      "investmentType": "a",
+      "amount": "a",
+      "investmentDate": "a",
+      "id": 2
+    },
+    {
+      "name": "iciic",
+      "investmentType": "mutual fund",
+      "amount": "1000",
+      "investmentDate": "2017-10-10",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,33 @@
+<form [formGroup]="investmentForm" (submit)="save()">
+    <div class="modal-header">
+        <h4 class="modal-title">Edit Investment</h4>
+        <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input formControlName="name" type="text">
+        </div>
+
+        <div class="form-group">
+            <label for="type">Type</label>
+            <input formControlName="type" type="text">
+        </div>
+
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input formControlName="amount" type="text">
+        </div>
+
+        <div class="form-group">
+            <label for="investmentDate">Investment Date</label>
+            <input formControlName="investmentDate" type="text">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" [disabled]="!investmentForm.valid" class="btn btn-success">Submit</button>
+        <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+    </div>
+</form>
